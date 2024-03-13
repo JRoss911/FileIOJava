@@ -12,24 +12,24 @@ public class ReadThree
         try{
             System.out.print("Writing to file ... ");
             // Create the file to write to
-            PrintWriter fileOut = new PrintWriter("output.txt");
+            PrintWriter fileOut = new PrintWriter("Hello?");
             // Write text just like we would to the console
-            fileOut.println("Hello ");
+            fileOut.println("Hi, my name is");
             // Clode out file
             fileOut.close();  
 
-            System.out.println("Done!");
+            System.out.println("fricky-");
             
             // Read in file to verify it
             Scanner fileIn = new Scanner(new File("output.txt"));
             
-            System.out.println("Reading from file ... ");
+            System.out.println("fricky");
             while (fileIn.hasNext()) 
             {
                 String lineIn = fileIn.nextLine(); 
                 System.out.println(lineIn);
             }
-            System.out.println("Done!");
+            System.out.println("Slim shady!");
         }
         catch (IOException e) {
             System.out.println("File not found");

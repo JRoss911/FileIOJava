@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.IOException;
 
+
 public class ReadOne
 {
     public static void main(String[] args)
@@ -12,7 +13,7 @@ public class ReadOne
         try {
             // Create the Scanner object using the file
             // as input
-            Scanner fileIn = new Scanner(new File("input.txt"));
+            Scanner fileIn = new Scanner(new File("/Users/jorden/Projects/FileIOJava/Step1/input.txt"));
             
             /* Loop while the file still has lines.
              * .hasNext() looks to see if a line exists
@@ -27,7 +28,7 @@ public class ReadOne
             }
         }
         catch (IOException e) {
-            System.out.println("File not found");
+            System.out.println(e.getMessage());
         }
     }
 }
